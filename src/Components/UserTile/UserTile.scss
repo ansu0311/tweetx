@@ -1,0 +1,53 @@
+.userContainer {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vw;
+  border-bottom: 0.1vw solid var(--placeColor);
+  color: var(--textColor);
+  display: flex;
+  .userDetails {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+
+    .userDP {
+      width: var(--dpSize);
+      height: var(--dpSize);
+      overflow: hidden;
+      object-fit: cover;
+      border-radius: 3rem;
+      background-color: var(--placeColor);
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .userText {
+      .userName {
+        text-transform: capitalize;
+        font-size: 1.4vw;
+        margin-bottom: 0.2vw;
+      }
+      .userFollower {
+        font-size: 0.75vw;
+        color: var(--linkColor);
+      }
+    }
+  }
+  .followBtn {
+    outline: none;
+    border: none;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    font-size: 1vw;
+    width: 8vw;
+    height: 2.5vw;
+    border-radius: 0.5rem;
+  }
+  .Following {
+    background-color: var(--buttonColor);
+    color: var(--backgroundColor);
+  }
+}

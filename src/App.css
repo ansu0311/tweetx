@@ -1,38 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+:root {
+  --backgroundColor: #ffffff;
+  --textColor: #5d676e;
+  --buttonColor: #ff748d;
+  --placeColor: #e0e0e0;
+  --linkColor: #686868;
+  --dpSize: 4.5vw
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button{
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  color: var(--backgroundColor);
+  background-color: var(--buttonColor);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button:hover{
+  background-color: var(--textColor);
+  color: var(--buttonColor);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.plain{
+  border: 0.1vw solid var(--textColor);
+  color: var(--textColor);
+  transition: all 0.3s ease-in-out;
+  background-color: var(--backgroundColor);
 }
-
-.App-link {
-  color: #61dafb;
+.plain:hover{
+  border: 0.1vw solid var(--buttonColor);
+  scale: 1.05;
+  color: var(--backgroundColor);
+  background-color: var(--buttonColor);
+  transition: all 0.3s ease-in-out;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inputSpace{
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--placeColor);
+  transition: all 0.3s ease-in-out;
 }

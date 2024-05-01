@@ -1,0 +1,13 @@
+.FeedContainer {
+  margin: 0 auto;
+  width: 50%;
+  .FeedBtn {
+    width: 3vw;
+    text-align: center;
+    font-size: 1.1vw;
+    margin: 1.5vw 0vw;
+    padding: 1vw 2vw;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+  }
+}

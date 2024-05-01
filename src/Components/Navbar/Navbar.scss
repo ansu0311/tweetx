@@ -1,0 +1,40 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  font-size: 1.5vw;
+  height: 5vw;
+  color: var(--linkColor);
+  background-color: var(--backgroundColor);
+  filter: drop-shadow(0vw 0.7vw 1vw var(--placeColor));
+  transition: all 0.3s ease-in-out;
+  .logo {
+    font-size: 1.6vw;
+    font-weight: 600;
+    color: var(--buttonColor);
+  }
+  .NavLinks {
+    display: flex;
+    font-weight: 600;
+    font-size: 1.1vw;
+    .NavLink {
+      transition: all 0.3s ease-in-out;
+      list-style: none;
+      margin-right: 2vw;
+      &:hover {
+        color: var(--buttonColor);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+    .active {
+      color: var(--buttonColor);
+      transition: all 0.3s ease-in-out;
+      scale: 1.1;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,58 @@
+.profileShell {
+  width: 100%;
+  .profileContainer {
+    margin: 0 auto;
+    width: 50%;
+    border-bottom: 0.1vw solid var(--placeColor);
+    color: var(--textColor);
+    display: flex;
+    padding: 2vw 0vw;
+    .profileDetails {
+      display: flex;
+      align-items: center;
+      gap: 4vw;
+      .profileDP {
+        width: 8vw;
+        height: 8vw;
+        overflow: hidden;
+        object-fit: cover;
+        border-radius: 50%;
+        background-color: var(--placeColor);
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .profileText {
+        margin-top: 2vw;
+        .profileName {
+          text-transform: capitalize;
+          font-size: 1.8vw;
+          margin-bottom: 1.5vw;
+        }
+        .profileFollower {
+          font-size: 0.85vw;
+          color: var(--linkColor);
+          span{
+            margin-right: 1.5vw;
+          }
+        }
+      }
+    }
+    .followBtn {
+      outline: none;
+      border: none;
+      background-color: var(--backgroundColor);
+      color: var(--textColor);
+      font-size: 1vw;
+      width: 8vw;
+      height: 2.5vw;
+      border-radius: 0.5rem;
+    }
+    .Following {
+      background-color: var(--buttonColor);
+      color: var(--backgroundColor);
+    }
+  }
+}

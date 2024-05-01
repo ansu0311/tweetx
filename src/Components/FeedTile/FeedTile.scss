@@ -1,0 +1,63 @@
+.feedShell {
+    overflow: hidden;
+  background-color: var(--backgroundColor);
+  filter: drop-shadow(0vw 0.7vw 1vw var(--placeColor));
+  border-radius: 1rem;
+  margin: 1.5vw 0vw;
+  transition: all 0.3s ease-in-out;
+  padding: 2vw 2vw;
+  .feedContainer {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    .feedDetails {
+      width: 100%;
+      justify-content: space-between;
+      display: flex;
+      align-items: flex-end;
+      .DP_Profile {
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        .feedDP {
+          width: var(--dpSize);
+          height: var(--dpSize);
+          overflow: hidden;
+          object-fit: cover;
+          border-radius: 3rem;
+          background-color: var(--placeColor);
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .feedName {
+          text-transform: capitalize;
+          font-size: 1.4vw;
+          margin-bottom: 0.2vw;
+        }
+      }
+      .feedTime {
+        font-size: 0.9vw;
+        color: var(--linkColor);
+        padding: 0vw 2.5vw 0.5vw 0vw;
+      }
+    }
+  }
+  .feedText {
+    font-size: 0.9vw;
+
+    padding: 0vw 2.5vw 0vw 5.5vw;
+  }
+  .feedCircle{
+    position: fixed;
+    left: 95%;
+    top: 40%;
+    height: 4vw;
+    width: 4vw;
+    border-radius: 3rem;
+    background-color: var(--buttonColor);
+  }
+}
